@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Seccion.astro';
+import Producto from '../components/Producto.astro';
+
+---
+
+<Layout>
+	<div class="contenedor-productos">
+		<Producto imagen='../../public/images/escultura1.png' titulo = 'Wooden spiral' descripcion='Madera, 30x60cm' precio={4500}/>
+		<Producto imagen='../../public/images/escultura2.png' titulo = 'Le coq' descripcion='Estructura metálica, 40x20cm' precio={1430}/>
+		<Producto imagen='../../public/images/escultura3.png' titulo = 'Waves' descripcion='Porcelana, 50x40cm' precio={1900}/>
+		<Producto imagen='../../public/images/escultura4.png' titulo = 'The climbing man' descripcion='Latón, 25x15cm' precio={3500}/>
+		<Producto imagen='../../public/images/escultura5.png' titulo = 'Caesar' descripcion='Piedra esmaltada, 70x40cm' precio={5300}/>
+		<Producto imagen='../../public/images/escultura6.png' titulo = 'Red ladder' descripcion='Acrílico, 70x50cm' precio={2100}/>
+		<Producto imagen='../../public/images/escultura7.png' titulo = 'Geisha' descripcion='Porcelana, 40x60cm' precio={3260}/>
+		<Producto imagen='../../public/images/escultura8.png' titulo = 'Copper man' descripcion='Cobre, 70x60cm' precio={5590}/>
+	</div>
+</Layout>
+<style>
+		.contenedor-productos {
+		display: flex;
+		justify-content: space-between; 
+        align-items: flex-end;
+		flex-wrap: wrap; 
+		padding: 20px;
+	}
+</style>

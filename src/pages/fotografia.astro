@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Seccion.astro';
+import Producto from '../components/Producto.astro';
+
+---
+
+<Layout>
+	<div class="contenedor-productos">
+		<Producto imagen='../../public/images/foto1.jpeg' titulo = 'LA MER IX' descripcion='80x60cm' precio={2340}/>
+		<Producto imagen='../../public/images/foto2.jpeg' titulo = 'Marble staircase' descripcion='100x100cm' precio={1700}/>
+		<Producto imagen='../../public/images/foto3.jpeg' titulo = 'The Queen' descripcion='90x110cm' precio={2080}/>
+		<Producto imagen='../../public/images/foto4.jpeg' titulo = 'Sahara' descripcion='120x100cm' precio={1800}/>
+		<Producto imagen='../../public/images/foto5.jpeg' titulo = 'Autumn leaves' descripcion='75x60cm' precio={1140}/>
+		<Producto imagen='../../public/images/foto6.jpeg' titulo = 'Green Sailing' descripcion='90x70cm' precio={2880}/>
+		<Producto imagen='../../public/images/foto7.jpeg' titulo = 'Homme au Negresco' descripcion='70x100cm' precio={1570}/>
+		<Producto imagen='../../public/images/foto8.jpeg' titulo = 'Humankind' descripcion='60x60cm' precio={2530}/>
+	</div>
+</Layout>
+<style>
+	.contenedor-productos {
+		display: flex;
+		justify-content: space-between; 
+		align-items: flex-end; 
+		flex-wrap: wrap;
+		padding: 20px;
+	}
+</style>

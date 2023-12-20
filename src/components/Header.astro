@@ -1,0 +1,78 @@
+---
+import {SITE_TITLE} from '../consts';
+---
+
+<header id="miEncabezado">
+	<h1>{SITE_TITLE}</h1>
+	<nav>
+		<ul>
+			<li><a href="/pintura">Pintura</a></li>
+			<li><a href="/escultura">Escultura</a></li>
+			<li><a href="/fotografia">Fotografía</a></li>
+			<li><a href="/dibujo">Dibujo</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+<style>
+	body {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+	overflow-x: hidden;
+	}
+
+	h1 {
+		color: #ffd700;
+		font-size: 3rem;
+	}
+
+	#miEncabezado {
+		
+		background: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+		color: #fff;
+		padding: 10px;
+		text-align: center;
+		position: relative;
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+		transition: background-color 0.3s ease;
+	}
+
+	#miEncabezado.scroll {
+		background-color: rgba(51, 51, 51, 0.8);
+	}
+
+	nav {
+		margin-top: 10px;
+	}
+
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	nav li {
+		margin: 0 15px;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: #fff;
+		font-weight: normal;
+		font-size: 15px;
+		transition: color 0.3s ease;
+	}
+
+	nav a:hover {
+		color: #ffd700;
+	}
+	
+
+</style>
+
+

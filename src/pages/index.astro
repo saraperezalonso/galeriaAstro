@@ -1,0 +1,69 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		
+		<main>
+			<div class="slider">
+				<div class="slide">
+					<div class="content">
+						<h2>"INNOVACIÓN Y <pre style="color:white">BELLEZA EN CADA</pre> OBRA"</h2>
+						<p class="quote"> - The Art Enthusiast</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="content">
+						<h2>"LA GALERÍA <pre style="color:white">DIGITAL QUE MARCA</pre> TENDENCIA"</h2>
+						<p class="quote"> - The Cultural Chronicle</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="content">
+						<h2>"UNA <pre style="color:white">EXPERIENCIA</pre> ARTÍSTICA SIN IGUAL"</h2>
+						<p class="quote"> - The Creative Times</p>
+					</div>
+				</div>
+			</div>
+			
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<script>
+	// Cambiar los slides automáticamente
+	let currentSlide = 0;
+	   const slides = document.querySelectorAll('.slide');
+	   
+	   function showSlide() {
+		   slides.forEach((slide, index) => {
+			   
+			   if (slide instanceof HTMLDivElement) {
+				   slide.style.display = index === currentSlide ? 'block' : 'none';
+			   }
+		   });
+	   }
+
+	   function nextSlide() {
+		   currentSlide = (currentSlide + 1) % slides.length;
+		   showSlide();
+	   }
+
+	   // Cambiar de slide cada 5 segundos 
+	   setInterval(nextSlide, 5000);
+
+	   // Mostrar el primer slide al cargar la página
+	   showSlide();
+</script>
+
+<!DOCTYPE html>

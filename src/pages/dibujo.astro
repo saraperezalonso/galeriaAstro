@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Seccion.astro';
+import Producto from '../components/Producto.astro';
+
+---
+
+<Layout>
+	<div class="contenedor-productos">
+		<Producto imagen='../../public/images/dibujo1.jpeg' titulo = 'Vértigo' descripcion='Carbón en Lienzo, 115x120cm' precio={2580}/>
+		<Producto imagen='../../public/images/dibujo2.jpeg' titulo = 'Structures' descripcion='Tinta China en Papel, 37x56cm' precio={4200}/>
+		<Producto imagen='../../public/images/dibujo3.jpeg' titulo = 'Arizona BW' descripcion='Grafito en Papel, 40x30cm' precio={1330}/>
+		<Producto imagen='../../public/images/dibujo4.jpeg' titulo = 'The young bull' descripcion='Pastel, Carbón en Lienzo, 91x91cm' precio={4040}/>
+		<Producto imagen='../../public/images/dibujo5.jpeg' titulo = 'Margarita' descripcion='Pastel en Papel, 70x70cm' precio={2180}/>
+		<Producto imagen='../../public/images/dibujo6.jpeg' titulo = 'Horse Sketch' descripcion='Carbón, Tiza en Papel, 100x100cm' precio={2200}/>
+		<Producto imagen='../../public/images/dibujo7.jpeg' titulo = 'Printemps' descripcion='Pluma en Papel, 29x42cm' precio={1370}/>
+		<Producto imagen='../../public/images/dibujo8.jpeg' titulo = 'Bird trio' descripcion='Tinta China en Papel, 37x56cm' precio={2930}/>
+	</div>
+</Layout>
+<style>
+	.contenedor-productos {
+		display: flex;
+		justify-content: space-between; 
+		align-items: flex-end; 
+		flex-wrap: wrap;
+		padding: 20px;
+	}
+</style>

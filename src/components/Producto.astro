@@ -1,0 +1,63 @@
+---
+
+export interface Props {
+    imagen: string;
+    titulo:string;
+    descripcion: string;
+    precio:number;
+}
+
+const {imagen, titulo, descripcion, precio} = Astro.props
+---
+
+    <div class="tarjeta">
+      <img src={imagen} alt="Imagen del producto" />
+      <h3>{titulo}</h3>
+      <p class="desc">{descripcion}</p>
+      <p class="precio">{precio}€</p>
+    </div>
+
+  
+  <style>
+
+        .tarjeta {
+        border: 1px solid #ddd;
+        padding: 16px;
+        text-align: center;
+        transition: box-shadow 0.3s ease;
+        margin: 10px;
+        width: calc(25% - 20px); 
+        box-sizing: border-box;
+        }
+
+        .tarjeta img {
+        width: 100%; 
+        height: auto;
+        object-fit: cover; 
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+        }
+
+        .tarjeta h3 {
+        font-size: 1.2em;
+        margin-bottom: 8px;
+        }
+
+
+        .tarjeta .desc {
+        color: #666;
+        margin-bottom: 12px;
+        }
+*/
+        .tarjeta .precio {
+        font-weight: bold;
+        color: #333;
+        font-size: 1.2em;
+        }
+
+        .tarjeta:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+  </style>
+  

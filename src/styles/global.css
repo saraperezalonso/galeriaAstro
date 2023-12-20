@@ -1,0 +1,93 @@
+
+	* {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+	overflow-x: hidden; 
+	}
+	h2 { font-family: "Rubik", sans-serif;
+		font-size: 5vw;  
+		font-variant: normal; 
+		font-weight: 900; 
+		color: #000;
+		mix-blend-mode: difference;
+	} 
+	h3 { font-family: "Rubik", sans-serif;
+		font-size: 17px; 
+		font-style: normal; 
+		font-variant: normal; 
+		font-weight: 700; 
+		line-height: 23px; 
+	} 
+	p { font-family: "Rubik", sans-serif;
+		font-size: 24px; 
+		font-variant: normal; 
+		font-weight: 800; 
+		line-height: 33px; 
+		text-shadow: 2cm;
+		color: black;
+		mix-blend-mode: difference;
+	} 
+	
+	.quote{
+		background-color: #fff;
+	}
+	.slider {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+	.slide {
+		display: none;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		animation: fadeIn 1s ease-in-out;
+	}
+	/* Imágenes del slider */
+	.slide:nth-child(1) { background-image: url('../../public/images/cuadro-slider8.jpeg'); }
+	.slide:nth-child(2) { background-image: url('../../public/images/cuadro-slider7.jpeg'); }
+	.slide:nth-child(3) { background-image: url('../../public/images/cuadro-slider4.jpeg'); }
+
+
+	.content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: #fff;
+	}
+	
+
+	h1, p {
+		margin: 0;
+	}
+
+	@keyframes fadeIn {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	.contenido {
+		margin-top: 100px;
+		padding: 20px;
+	}
+
+	.card{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		transition: 0.3;
+		margin-left: 50px;
+		width:30%;
+		margin-bottom: 15px;
+		padding: 5px;
+	}
+	.card:hover{
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	}
+	.container{
+		padding: 2px, 36px;
+	}
+

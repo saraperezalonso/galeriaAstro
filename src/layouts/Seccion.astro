@@ -1,0 +1,28 @@
+---
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			main {
+				width: calc(100% - 2em);
+				max-width: 100%;
+				margin: 0;
+			}
+			
+		</style>
+		
+	</head>
+
+	<body>
+		<Header />
+		<slot></slot>
+		<Footer />
+	</body>
+</html>
+

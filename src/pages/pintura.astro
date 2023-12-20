@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Seccion.astro';
+import Producto from '../components/Producto.astro';
+
+---
+
+<Layout>
+	<div class="contenedor-productos">
+		<Producto imagen='../../public/images/pintura1.jpeg' titulo = 'Floral sunset' descripcion='Acrílico en Lino, 60x60cm' precio={4220}/>
+		<Producto imagen='../../public/images/pintura2.jpeg' titulo = 'Evening by the river' descripcion='Acrílico en Lino, 60x60cm' precio={5390}/>
+		<Producto imagen='../../public/images/pintura3.jpeg' titulo = 'Breaker' descripcion='Aerosol en Lienzo, 80x110cm' precio={1900}/>
+		<Producto imagen='../../public/images/pintura4.jpeg' titulo = 'Arbres de lumière' descripcion='Collage en Lienzo, 100x100cm' precio={3280}/>
+		<Producto imagen='../../public/images/pintura5.jpeg' titulo = 'White Space' descripcion='Acrílico en Lino, 75x60cm' precio={5300}/>
+		<Producto imagen='../../public/images/pintura6.jpeg' titulo = 'Green Sailing' descripcion='Acrílico, 70x70cm' precio={4100}/>
+		<Producto imagen='../../public/images/pintura7.jpeg' titulo = 'Birdy' descripcion='Aerosol en Lienzo, 80x110cm' precio={1250}/>
+		<Producto imagen='../../public/images/pintura8.jpeg' titulo = 'Dissolved' descripcion='Acrílico en Lino, 60x60cm' precio={5970}/>
+	</div>
+</Layout>
+<style>
+	.contenedor-productos {
+		display: flex;
+		justify-content: space-between; 
+		align-items: flex-end; 
+		flex-wrap: wrap;
+		padding: 20px;
+	}
+</style>
